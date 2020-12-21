@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wonkru Events</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <script src="./js/jquery.js" charset="utf-8"></script>
+    <script src="js/aos.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./css/aos.css" />
+  </head>
+  <body>
+    <header class="page-pad">
+      <h1 class="bold white-txt">WØNKRÜ</h1>
+      <ul>
+        <li class="med">HOME</li>
+        <li class="med">ABOUT</li>
+        <li class="med">BOOK US</li>
+        <li class="med">CONTACT</li>
+      </ul>
+      <div class="menu-container" data-screen="mobile">
+        <div class="menu-background"></div>
+        <div class="hidden-menu">
+          <div class="menu-icon">
+            <span>close</span>
+            <img
+              src="icons/times-solid.svg"
+              align="center"
+              class="icon hide-menu-icon icon"
+              alt=""
+            />
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="./index.php" class="selected">HOME</a></li>
+              <li>
+                <a href="gallerycat.php">GALLERY</a>
+                <i id="portfolio" class="fas fa-angle-up fa-rotate-180"></i>
+                <ul class="portfolio-ul">
+                  <li><a href="gallery.inc.php?cat=Nature">Nature</a></li>
+                  <li><a href="gallery.inc.php?cat=Abstract">Abstract</a></li>
+                  <li><a href="gallery.inc.php?cat=Portrait">Portrait</a></li>
+                  <li><a href="gallery.inc.php?cat=Street">Street</a></li>
+                  <li><a href="gallery.inc.php?cat=Macro">Macro</a></li>
+                  <li><a href="gallery.inc.php?cat=Wildlife">Wildlife</a></li>
+                </ul>
+              </li>
+              <li><a href="rules.php">RULES</a></li>
+              <li><a href="winner.php">WINNERS</a></li>
+              <li><a href="contactus.php">CONTACT US</a></li>
+              <li>
+                <a href="https://www.instagram.com/kritesh_kaushik/">
+                  <i class="fab fa-lg fa-instagram"> </i>
+                </a>
+                <a href="https://www.facebook.com/kritesh.kaushik.3">
+                  <i class="fab fa-lg fa-facebook"> </i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img
+        src="icons/bars-solid.svg"
+        align="center"
+        class="icon toggle-menu-icon"
+        alt=""
+      />
+    </header>
+    <section class="full-sec main-wrap">
+      <div class="backdrop">
+        <img src="./images/backdrop.jpg" alt="" />
+      </div>
+      <div class="timer">
+        <div class="countdown">
+          <div class="bloc-time hours" data-init-value="24">
+            <span class="count-title">Hours</span>
+
+            <div class="figure hours hours-1">
+              <span class="top">2</span>
+              <span class="top-back">
+                <span>2</span>
+              </span>
+              <span class="bottom">2</span>
+              <span class="bottom-back">
+                <span>2</span>
+              </span>
+            </div>
+
+            <div class="figure hours hours-2">
+              <span class="top">4</span>
+              <span class="top-back">
+                <span>4</span>
+              </span>
+              <span class="bottom">4</span>
+              <span class="bottom-back">
+                <span>4</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bloc-time min" data-init-value="0">
+            <span class="count-title">Minutes</span>
+
+            <div class="figure min min-1">
+              <span class="top">0</span>
+              <span class="top-back">
+                <span>0</span>
+              </span>
+              <span class="bottom">0</span>
+              <span class="bottom-back">
+                <span>0</span>
+              </span>
+            </div>
+
+            <div class="figure min min-2">
+              <span class="top">0</span>
+              <span class="top-back">
+                <span>0</span>
+              </span>
+              <span class="bottom">0</span>
+              <span class="bottom-back">
+                <span>0</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bloc-time sec" data-init-value="0">
+            <span class="count-title">Seconds</span>
+
+            <div class="figure sec sec-1">
+              <span class="top">0</span>
+              <span class="top-back">
+                <span>0</span>
+              </span>
+              <span class="bottom">0</span>
+              <span class="bottom-back">
+                <span>0</span>
+              </span>
+            </div>
+
+            <div class="figure sec sec-2">
+              <span class="top">0</span>
+              <span class="top-back">
+                <span>0</span>
+              </span>
+              <span class="bottom">0</span>
+              <span class="bottom-back">
+                <span>0</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

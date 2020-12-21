@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: 0.5s all ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto, "sans-serif";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Oswald, "sans-serif";
+}
+:root {
+  --orange: #f2a365;
+  --blue: #30475e;
+  --red: #f40552;
+  --black: #222831;
+  --white: #f8f8f8;
+  --grey: #eeeeee;
+  --header: red;
+  --timer: #443986;
+}
+.icon {
+  height: 30px;
+  width: 30px;
+  opacity: 0.7;
+}
+.black {
+  background-color: #0c121cde;
+}
+.white {
+  background-color: var(--white);
+}
+.white-txt {
+  color: var(--white);
+}
+.red-txt {
+  color: var(--red);
+}
+.blue-txt {
+  color: var(--blue);
+}
+.grey-txt {
+  color: var(--grey);
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.border {
+  border: 1px solid rgba(12, 18, 28, 0.28);
+}
+
+.borderbtm {
+  border-bottom: 1px solid rgba(12, 18, 28, 0.38);
+}
+
+.borderbtmwhite {
+  border-bottom: 1px solid #f8f7f7;
+}
+
+.light {
+  font-weight: 200;
+}
+
+.med {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.bolder {
+  font-weight: 800;
+}
+
+.red {
+  background-color: #f7444e;
+}
+
+.whitetext {
+  color: #f9f9f9;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.logo {
+  cursor: pointer;
+  margin-bottom: 3px;
+  font-size: 35px;
+  padding: 10px;
+  color: #303030;
+}
+
+.boxradius {
+  border: 0px;
+  border-radius: 15px;
+}
+a {
+  color: #333333;
+}
+li,
+a,
+button {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.boxshd,
+.shd {
+  transition: all 0.3s ease;
+  transform: scale(1);
+  box-shadow: 0 3.3px 5.3px rgba(0, 0, 0, 0.087),
+    0 11.2px 17.9px rgba(0, 0, 0, 0.123);
+}
+
+/*.navbar a{font-weight: 100;}*/
+.selected {
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--black);
+}
+.page-pad {
+  padding: 0 10%;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+body {
+  font-family: Oswald, "sans-serif";
+  height: 100%;
+}
+header {
+  position: sticky;
+  z-index: 111;
+  top: 0;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 2.5%;
+  flex-wrap: wrap;
+  box-shadow: 0 5px 6px #0002;
+}
+header h1 {
+  font-size: 2em;
+}
+header > ul > li {
+  display: inline-block;
+  padding: 30px;
+  color: var(--white);
+}
+header ul li:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.active {
+  background: var(--header);
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* side menu starts here  */
+.hidden-menu {
+  width: 0%;
+  padding: 0px;
+  right: 0;
+  top: 0;
+  position: absolute;
+  z-index: 5;
+  height: 100vh;
+  background-color: var(--white);
+}
+.menu-container {
+  display: none;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: absolute;
+}
+.menu-background {
+  /* display: none; */
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  z-index: 4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  cursor: pointer;
+  width: 100%;
+}
+
+.menu {
+  text-align: right;
+  padding: 60px 0;
+  line-height: 2em;
+}
+
+.menu li {
+  text-transform: uppercase;
+  margin: 14px 0;
+}
+
+#portfolio {
+  cursor: pointer;
+}
+
+.portfolio-ul {
+  line-height: 1em;
+}
+
+.portfolio-ul li {
+  display: none;
+  opacity: 0.6;
+  font-size: 0.7em;
+}
+
+.menu-icon {
+  width: 100%;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: right;
+}
+
+.menu-icon i {
+  opacity: 0.7;
+}
+
+.toggle-menu-icon {
+  display: none;
+}
+@media only screen and (max-width: 560px) {
+  header > ul {
+    display: none;
+  }
+  .toggle-menu-icon {
+    display: block;
+  }
+  header {
+    padding: 20px;
+  }
+}
+
+.full-sec {
+  width: 100vw;
+}
+.main-wrap {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.backdrop {
+  height: 100%;
+  width: 100%;
+}
