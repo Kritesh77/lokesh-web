@@ -32,7 +32,7 @@ h6 {
   --black: #222831;
   --white: #f8f8f8;
   --grey: #eeeeee;
-  --header: red;
+  --header: #12114a;
   --timer: #443986;
 }
 .icon {
@@ -147,7 +147,7 @@ img {
   object-fit: cover;
 }
 body {
-  font-family: Oswald, "sans-serif";
+  font-family: Roboto, "sans-serif";
   height: 100%;
 }
 header {
@@ -271,11 +271,102 @@ header ul li:hover {
 }
 .main-wrap {
   height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
+  transform: translateY(-100px);
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 .backdrop {
   height: 100%;
   width: 100%;
+}
+.main-wrap-text {
+  position: absolute;
+  font-size: 2.5rem;
+  text-align: center;
+  align-self: center;
+}
+.main-wrap-button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: 0;
+  color: var(--white);
+  font-weight: 200;
+  letter-spacing: 1.2px;
+  border-radius: 16px;
+  background-color: var(--red);
+}
+/* //timer */
+.timer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(50%);
+}
+.timer > .container {
+  color: var(--white);
+  padding: 2% 5%;
+  font-family: Roboto, "sans-serif";
+  font-weight: 100;
+  margin: 0 auto;
+  background-color: var(--timer);
+  text-align: center;
+  width: 70vw;
+  border: 0;
+  border-radius: 12px;
+}
+.timer ul {
+  justify-content: space-evenly;
+}
+.timer h1 {
+  padding: 5px 0;
+}
+.countdown span {
+  font-family: Oswald;
+}
+.timer li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  text-transform: uppercase;
+  flex-grow: 1;
+}
+.timer li:nth-child(2n) {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.timer li:last-child {
+  border-right: 0;
+}
+.timer li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.message {
+  font-size: 4rem;
+}
+
+#content {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji {
+  padding: 0 0.25rem;
+}
+@media only screen and (max-width: 768px) {
+  .timer li span {
+    font-size: 2rem;
+  }
+  .timer li {
+    font-size: 1rem;
+  }
+  .timer h1 {
+    font-size: 20px;
+  }
+  .timer .container {
+    width: 80vw;
+    padding: 5% 4%;
+  }
 }
